@@ -1,0 +1,20 @@
+div {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+mat-form-field {
+  width: 70%;
+}
+.box {
+  float: left;
+  width: 20%;
+  margin: 10px;
+  height: 250px;
+  cursor: pointer;
+}
+  .box img {
+    width: 100%;
+    margin: auto;
+    height: 200px;
+  }

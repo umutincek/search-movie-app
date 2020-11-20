@@ -1,0 +1,15 @@
+<div>
+  <h1> {{title}} </h1>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Search movie..." #movie (keyup)="search(movie.value)">
+  </mat-form-field>
+  <br>
+  <mat-card routerLink="detail/{{movie.imdbID}}" class="box" *ngFor="let movie of movies$ | async">
+      <img matCardImage [src]="movie.Poster">
+      <mat-card-content>
+        <h3> {{movie.Title}} ({{movie.Year}})</h3>
+      </mat-card-content>
+  </mat-card>
+</div>
+
+
